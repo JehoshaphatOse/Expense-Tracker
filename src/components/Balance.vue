@@ -13,5 +13,5 @@ const props = defineProps({
   <h4>Your Available Balance</h4>
 
   <!-- <h2 v-if="!check" id="negative_Balance">${{ total.toLocaleString() }}</h2> -->
-  <h2 id="balance">${{ total.toLocaleString() }}</h2>
+  <h2 id="balance">&#x20A6;{{ total.toLocaleString() }}</h2>
 </template>
