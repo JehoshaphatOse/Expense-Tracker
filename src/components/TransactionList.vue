@@ -26,7 +26,7 @@ const viewAllHistory = () => {
       :key="transaction.id"
       :class="transaction.amount < 0 ? 'minus' : 'plus'"
     >
-      {{ transaction.text }}<span>${{ Math.abs(transaction.amount).toLocaleString() }}</span
+      {{ transaction.text }}<span>&#x20A6;{{ Math.abs(transaction.amount).toLocaleString() }}</span
       ><button @click="deleteTransaction(transaction.id)" class="delete-btn">x</button>
     </li>
 
