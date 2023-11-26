@@ -52,11 +52,11 @@ const income = computed(() => {
     .toFixed(2)
 })
 
-const check = () => {
-  if (total.value <= 0) {
-    return total.value
-  }
-}
+// const check = () => {
+//   if (total.value <= 0) {
+//     return total.value
+//   }
+// }
 
 //Get expense
 const expense = computed(() => {
@@ -102,7 +102,7 @@ const saveTransaction = () => {
   <div class="container">
     <div class="header-container">
       <div>
-        <Balance :total="+total" :check="check" />
+        <Balance :total="+total" />
         <IncomeExpenses :income="+income" :expense="+expense" />
       </div>
       <div>

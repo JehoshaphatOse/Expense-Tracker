@@ -19,7 +19,7 @@ const viewAllHistory = () => {
 
 <template>
   <h3>History</h3>
-  <p @click="viewAllHistory()">View All</p>
+  <!-- <p @click="viewAllHistory()">View All</p> -->
   <ul id="list" class="list">
     <li
       v-for="transaction in transactions"

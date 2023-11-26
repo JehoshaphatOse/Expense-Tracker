@@ -5,10 +5,6 @@ const props = defineProps({
   total: {
     type: Number,
     required: true
-  },
-  check: {
-    type: Number,
-    required: true
   }
 })
 </script>
@@ -16,6 +12,6 @@ const props = defineProps({
 <template>
   <h4>Your Available Balance</h4>
 
-  <h2 v-if="!check" id="negative_Balance">${{ total.toLocaleString() }}</h2>
+  <!-- <h2 v-if="!check" id="negative_Balance">${{ total.toLocaleString() }}</h2> -->
   <h2 id="balance">${{ total.toLocaleString() }}</h2>
 </template>
